@@ -1,12 +1,12 @@
 # Informe Técnico: Proyecto Integrador de Aprendizaje Automático
-## Visión Artificial para Seguridad, Logística y Operaciones Inteligentes
+## Visión Artificial para Seguridad y Prevención de Riesgos en la Construcción
 
 ---
 
 ### Control de Versiones del Documento
 | Versión | Fecha | Descripción | Autor |
 | :--- | :--- | :--- | :--- |
-| 1.0.0 | 2026-06-04 | Hito 1: Definición del Problema (EPP) | Grupo de Proyecto |
+| 1.0.0 | 2026-06-04 | Hito 1: Definición del Problema (EPP - Construcción) | Grupo de Proyecto |
 
 ---
 
@@ -14,33 +14,34 @@
 ## Proyecto 1: Monitoreo de Elementos de Protección Personal (EPP)
 
 ### 1.1 Contexto Organizacional
-El proyecto se enmarca dentro de la **Terminal Portuaria del Pacífico (TPP)**, una de las instalaciones de logística y transporte de carga más grandes de la región. La TPP opera las 24 horas del día, los 7 días de la semana, gestionando el flujo constante de contenedores, camiones, grúas pórtico y personal en tierra. 
+El proyecto se enmarca dentro de una constructora, específicamente en el desarrollo de una obra de edificación y desarrollo urbano a gran escala. La obra opera durante jornadas diurnas y turnos especiales extendidos, gestionando el movimiento constante de materiales pesados, maquinaria de excavación, grúas torre y una fuerza laboral dinámica en el terreno. 
 
-Dentro de esta infraestructura crítica, conviven múltiples riesgos físicos:
-* Operaciones de izaje de carga pesada.
-* Tránsito continuo de maquinaria pesada y vehículos de transporte interno (reach stackers, tractocamiones).
-* Condiciones climáticas variables (alta radiación solar, humedad, viento y turnos nocturnos).
+Dentro de este entorno laboral complejo, conviven múltiples riesgos físicos y peligros:
+* Caída de objetos desde altura (herramientas, escombros o materiales de construcción).
+* Operaciones de izaje de carga pesada mediante grúas torre y camiones pluma.
+* Tránsito continuo de maquinaria pesada de movimiento de tierra (retroexcavadoras, camiones tolva, mezcladores de concreto) en zonas compartidas con personal de a pie.
+* Condiciones climáticas variables y riesgos eléctricos asociados a la instalación de faenas y construcción en altura.
 
-Para mitigar estos riesgos, la organización cuenta con una estricta política de seguridad alineada con normativas internacionales (como las directrices de la OSHA y normativas locales de seguridad laboral). Esta política establece el uso obligatorio de **Elementos de Protección Personal (EPP)** básicos para todo el personal operativo y visitantes en las zonas de patio de contenedores y muelles:
+Para mitigar estos riesgos, la organización cuenta con una estricta política de seguridad alineada con normativas internacionales (como las directrices de la OSHA y normativas locales de seguridad laboral). Esta política establece el uso obligatorio de **Elementos de Protección Personal (EPP)** básicos para todo el personal de obra, subcontratistas y visitantes dentro del perímetro de faena:
 1. **Casco de seguridad**: Protección contra impactos por caída de objetos o colisiones.
-2. **Chaleco reflectante**: Garantiza la visibilidad de los operarios ante los conductores de maquinaria pesada.
-3. **Lentes de seguridad**: Protección ocular frente a partículas en suspensión y radiación solar.
-4. **Guantes de protección**: Cuidado de extremidades superiores en tareas de manipulación física y trincado.
+2. **Chaleco reflectante**: Garantiza la visibilidad de los operarios ante los operadores de maquinaria pesada.
+3. **Lentes de seguridad**: Protección ocular frente a partículas en suspensión, polvo de concreto y radiación solar.
+4. **Guantes de protección**: Cuidado de extremidades superiores en tareas de manipulación manual de materiales (fierro, madera, cemento) y herramientas.
 
-El departamento de **Prevención de Riesgos y Seguridad Ocupacional** de la TPP es el encargado de supervisar el cumplimiento de estas normas. Sin embargo, con un área operativa de más de 50 hectáreas y más de 300 trabajadores en turnos rotativos, la supervisión directa y manual es insuficiente e ineficiente.
+El departamento de **Prevención de Riesgos y Seguridad Ocupacional** de la constructora es el encargado de supervisar el cumplimiento de estas normas. Sin embargo, con una obra vertical y horizontal que abarca múltiples frentes de trabajo simultáneos y más de 400 trabajadores, la supervisión directa y manual es insuficiente e ineficiente.
 
 ---
 
 ### 1.2 Problema a Resolver
-Actualmente, el monitoreo del uso de EPP en la TPP se realiza mediante inspecciones físicas aleatorias e intermitentes por parte de los prevencionistas de riesgos, y a través de revisiones reactivas de las grabaciones de las cámaras de seguridad cuando ya ha ocurrido un incidente.
+Actualmente, el monitoreo del uso de EPP en la obra se realiza mediante inspecciones físicas aleatorias e intermitentes por parte de los prevencionistas de riesgos, y a través de revisiones reactivas de las grabaciones de las cámaras de seguridad cuando ya ha ocurrido un incidente.
 
 Esta metodología presenta los siguientes problemas críticos:
-1. **Inspección manual ineficiente y propensa al error humano**: Es físicamente imposible que el personal de seguridad controle visualmente a todos los operadores en tiempo real. Los prevencionistas no pueden estar en todos los frentes de trabajo simultáneamente.
-2. **Falta de proactividad**: Las infracciones solo se detectan cuando un inspector está presente o tras un accidente laboral, lo que impide prevenir el riesgo en el momento en que ocurre.
-3. **Pérdida de datos e imposibilidad de análisis de tendencias**: Al no registrar sistemáticamente los incumplimientos diarios (quién, cuándo y dónde no se usó el EPP), la empresa no puede tomar acciones correctivas focalizadas, charlas de seguridad basadas en datos o rediseño de zonas de tránsito.
-4. **Costos operacionales y legales**: La falta de adherencia al uso de EPP incrementa la tasa de siniestralidad, lo que se traduce en paralizaciones operativas por orden de la autoridad del trabajo, multas financieras significativas y primas de seguros de accidentes laborales más elevadas.
+1. **Inspección manual ineficiente y propensa al error humano**: Es físicamente imposible que los prevencionistas controlen visualmente a todos los trabajadores en frentes de altura, excavaciones y áreas comunes en tiempo real de manera simultánea.
+2. **Falta de proactividad**: Las infracciones solo se detectan si un prevencionista coincide temporalmente en la misma zona de riesgo o tras un accidente laboral, imposibilitando una acción preventiva inmediata.
+3. **Pérdida de datos e imposibilidad de análisis de tendencias**: Al no registrar sistemáticamente los incumplimientos diarios (quién, cuándo y en qué nivel de la obra no se usó el EPP), la empresa no puede tomar acciones correctivas basadas en datos, como charlas focalizadas o redistribución de prevencionistas.
+4. **Costos operacionales y legales**: Un accidente grave en construcción provoca la clausura de la obra por orden de la Dirección del Trabajo, con los consecuentes retrasos en la entrega, multas de gran escala y el encarecimiento de la prima de seguro por siniestralidad.
 
-El desafío principal consiste en **automatizar la detección visual de los cuatro EPP críticos (casco, chaleco, lentes y guantes)** en los flujos de video de las cámaras de circuito cerrado (CCTV) existentes en la terminal, identificando instantáneamente cualquier infracción y alertando a los supervisores de forma proactiva.
+El desafío principal consiste en **automatizar la detección visual de los cuatro EPP críticos (casco, chaleco, lentes y guantes)** en los flujos de video de las cámaras de circuito cerrado (CCTV) instaladas en los puntos críticos de la faena (accesos, grúas, losas activas), identificando instantáneamente cualquier infracción y alertando a los supervisores de forma proactiva.
 
 ---
 
@@ -54,8 +55,8 @@ La implementación del sistema de visión artificial generará impactos positivo
 
 * **Impacto Operativo**:
   * Transición de un esquema de supervisión reactivo a uno **preventivo en tiempo real**.
-  * Optimización del tiempo del equipo de Prevención de Riesgos, permitiéndoles concentrarse en áreas críticas y análisis de procesos en lugar de patrullas rutinarias de control de vestimenta.
-  * Generación de mapas de calor de infracciones para identificar qué áreas del puerto presentan mayor incumplimiento de normas.
+  * Optimización del tiempo del equipo de Prevención de Riesgos, permitiéndoles concentrarse en áreas de alto peligro (trabajos en altura, izaje) en lugar de patrullas rutinarias de control visual de vestimenta.
+  * Generación de mapas de calor de infracciones para identificar qué frentes o niveles de la obra presentan mayor incumplimiento de normas.
 
 * **Impacto Económico**:
   * Reducción de costos por multas gubernamentales debido al incumplimiento de normativas de higiene y seguridad laboral.
@@ -63,12 +64,12 @@ La implementación del sistema de visión artificial generará impactos positivo
   * Potencial reducción de las primas de seguro por siniestralidad laboral al demostrar un sistema activo de mitigación de riesgos con base tecnológica.
 
 * **Impacto Reputacional y de Innovación**:
-  * Posicionamiento de la Terminal Portuaria del Pacífico como un puerto inteligente (*Smart Port*) líder en la adopción de tecnologías de Inteligencia Artificial para el bienestar de sus trabajadores.
+  * Posicionamiento de la constructora como una empresa pionera en construcción inteligente (*Smart Construction*) y líder en la adopción de tecnologías de Inteligencia Artificial para el bienestar y la seguridad laboral de sus trabajadores.
 
 ---
 
 ### 1.4 Objetivo General
-Diseñar, implementar y evaluar un sistema integral de visión artificial y aprendizaje automático para el monitoreo automatizado del uso de Elementos de Protección Personal (casco, chaleco reflectante, lentes de seguridad y guantes) en tiempo real en la Terminal Portuaria del Pacífico, con el propósito de optimizar la fiscalización de seguridad industrial, prevenir accidentes y garantizar el cumplimiento regulatorio de la organización.
+Diseñar, implementar y evaluar un sistema integral de visión artificial y aprendizaje automático para el monitoreo automatizado del uso de Elementos de Protección Personal (casco, chaleco reflectante, lentes de seguridad y guantes) en tiempo real en la obra de construcción de la constructora, con el propósito de optimizar la fiscalización de seguridad industrial, prevenir accidentes y garantizar el cumplimiento regulatorio de la organización.
 
 ---
 
