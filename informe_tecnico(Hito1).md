@@ -41,7 +41,7 @@ Esta metodología presenta los siguientes problemas críticos:
 3. **Pérdida de datos e imposibilidad de análisis de tendencias**: Al no registrar sistemáticamente los incumplimientos diarios (quién, cuándo y en qué nivel de la obra no se usó el EPP), la empresa no puede tomar acciones correctivas basadas en datos, como charlas focalizadas o redistribución de prevencionistas.
 4. **Costos operacionales y legales**: Un accidente grave en construcción provoca la clausura de la obra por orden de la Dirección del Trabajo, con los consecuentes retrasos en la entrega, multas de gran escala y el encarecimiento de la prima de seguro por siniestralidad.
 
-El desafío principal consiste en **automatizar la detección visual de los cuatro EPP críticos (casco, chaleco, lentes y guantes)** en los flujos de video de las cámaras de circuito cerrado (CCTV) instaladas en los puntos críticos de la faena (accesos, grúas, losas activas), identificando instantáneamente cualquier infracción y alertando a los supervisores de forma proactiva.
+El desafío principal consiste en **automatizar la detección de personas que no cuentan con sus Elementos de Protección Personal obligatorios (ausencia de casco, chaleco, lentes o guantes)** en los flujos de video de las cámaras de circuito cerrado (CCTV) instaladas en los puntos críticos de la faena (accesos, grúas, losas activas), identificando instantáneamente cualquier infracción de seguridad y alertando a los supervisores de forma proactiva.
 
 ---
 
@@ -69,13 +69,13 @@ La implementación del sistema de visión artificial generará impactos positivo
 ---
 
 ### 1.4 Objetivo General
-Diseñar, implementar y evaluar un sistema integral de visión artificial y aprendizaje automático para el monitoreo automatizado del uso de Elementos de Protección Personal (casco, chaleco reflectante, lentes de seguridad y guantes) en tiempo real en la obra de construcción de la constructora, con el propósito de optimizar la fiscalización de seguridad industrial, prevenir accidentes y garantizar el cumplimiento regulatorio de la organización.
+Diseñar, implementar y evaluar un sistema integral de visión artificial y aprendizaje automático centrado en la **detección y alerta temprana de personas sin Elementos de Protección Personal** (casco, chaleco reflectante, lentes de seguridad y guantes) en tiempo real en la obra de construcción, con el propósito de optimizar la fiscalización preventiva, mitigar el riesgo de accidentes y garantizar el cumplimiento normativo de la organización.
 
 ---
 
 ### 1.5 Objetivos Específicos
 Para alcanzar el objetivo general, se proponen los siguientes objetivos específicos:
 
-1. **Desarrollar y comparar experimentalmente dos arquitecturas de aprendizaje profundo** para la detección y clasificación multiclase de EPP (casco, chaleco, lentes y guantes) en imágenes y video: una basada en redes neuronales convolucionales (CNN, como YOLO o Faster R-CNN) y otra basada en modelos de atención (Vision Transformers, como ViT o Swin Transformer), analizando métricas de precisión (Precision, Recall, F1-Score) y costos computacionales (tiempo de inferencia, frames por segundo).
-2. **Implementar una arquitectura de software robusta e integrada** que conecte un servicio de inferencia de IA con un Backend API para la gestión de solicitudes, una Base de Datos relacional para registrar de manera persistente las detecciones e incidentes con marca de tiempo, y un Frontend interactivo que permita a los supervisores de seguridad subir medios, consultar el historial de infracciones y visualizar reportes analíticos.
+1. **Desarrollar y comparar experimentalmente dos arquitecturas de aprendizaje profundo** para la detección y clasificación multiclase de infracciones de seguridad (identificando la ausencia de casco, chaleco, lentes o guantes en los trabajadores) en imágenes y video: una basada en redes neuronales convolucionales (CNN, como YOLO o Faster R-CNN) y otra basada en modelos de atención (Vision Transformers, como ViT o Swin Transformer), analizando métricas de precisión (Precision, Recall, F1-Score) y costos computacionales (tiempo de inferencia, frames por segundo).
+2. **Implementar una arquitectura de software robusta e integrada** que conecte un servicio de inferencia de IA con un Backend API para la gestión de solicitudes, una Base de Datos relacional para registrar de manera persistente las infracciones detectadas (trabajadores desprotegidos) e incidentes con marca de tiempo, y un Frontend interactivo que permita a los supervisores de seguridad subir medios, consultar el historial de infracciones y visualizar reportes analíticos.
 3. **Diseñar y ejecutar un plan de evaluación operacional, económica y ética** del sistema, detallando el análisis de retorno de inversión (ROI) frente a multas y accidentes prevenidos, y estableciendo directrices claras de privacidad y confidencialidad para asegurar que el monitoreo visual respete los derechos fundamentales de los trabajadores.
